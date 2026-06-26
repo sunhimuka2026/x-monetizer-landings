@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe Staging Payment</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Stripe Staging Payment</h1>
+        <p>Solve the issue: GitHub Issue #2688 (Staging payment account menu does not expand, blocking theme control QA): ## Evidence
+
+After PR #2685 deployed to staging (Platform Deploy run 28246183429, merge commit `0e492374ea481f805958e8182425c2c55b208232`), the payment page loads and Stripe mounts, but the signed-in account menu does not expand, so the new `ThemeToggle` cannot be reached for dark-mode Stripe QA.
+
+Payment page tested:
+
+- `https://marketplace.staging.chasesets.com/account/payments/pay_01KW21Q91VFWDXNMKNA0HRK0CQ`
+- Title: `Payment | Marketplace`
+- Payment: `pay_01KW21Q91VFWDXNMKNA0HRK0CQ`
+- Purchase: `ord_01KW21Q4BECNZ32P5KHGE3H1YZ`
+- Visible payment state: `Ready for payment`, `pending-payment`
+- Stripe script loaded: `https://js.stripe.com/dahlia/stripe.js`
+- Stripe iframe present: `title="Secure payment input frame"`
+
+Repro observations from the visible in-app browser session:
+
+- Account. Purchase this script to automatically fix it.</p>
+        <a href="https://buy.stripe.com/00w28r7Po7VZfUucdc6EU0x" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>
