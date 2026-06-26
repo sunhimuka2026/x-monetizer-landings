@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESLint Enhancer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #05192d;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+        }
+        h1 {
+            margin: 0;
+            color: #000000;
+        }
+        .hero {
+            padding: 50px 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 300px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta button {
+            background: linear-gradient(135deg, #10b981, #059669);
+            border: none;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: all 0.3s ease;
+        }
+        .cta button:hover {
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
+        }
+        .newsletter {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .newsletter input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        .newsletter button {
+            background: linear-gradient(135deg, #10b981, #059669);
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ESLint Enhancer</h1>
+    </header>
+    <div class="hero">
+        <h2>Streamline Your JavaScript Code</h2>
+        <p>Eliminate unnecessary calls and improve readability with our powerful ESLint rule enhancements.</p>
+    </div>
+    <div class="features">
+        <div class="feature-card">
+            <h3>Identify Useless Calls</h3>
+            <p>Automatically detect and flag `.call(null, arg)` and `.apply(undefined, [args])` patterns.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Seamless Integration</h3>
+            <p>Easy to add to your existing ESLint configuration with just a few lines of code.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Automated Fixes</h3>
+            <p>Purchase our script to automatically fix detected issues in your codebase.</p>
+        </div>
+    </div>
+    <div class="cta">
+        <button onclick="alert('Redirecting to checkout...')">Get ESLint Enhancer Now</button>
+    </div>
+    <div class="newsletter">
+        <h3>Stay Updated</h3>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </div>
+    <script>
+        // JavaScript for future enhancements can be added here
+    </script>
+</body>
+</html>
