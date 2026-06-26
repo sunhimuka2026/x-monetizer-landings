@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Mcp Audit</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Dev Mcp Audit</h1>
+        <p>Solve the issue: GitHub Issue #32 (MCP Audit: Suggestions for improving contributor experience and documentation): I ran your MCP server through our automated audit tool — here are the results.
+
+## Overview
+
+This is a well-structured TypeScript MCP server using the Gram framework with solid patterns for short-lived credential management and query safety validation. The code quality is high — especially the query validator with its tautology detection and the clean separation of auth, API, and query execution concerns. Below are actionable suggestions to polish the project further.
+
+---
+
+## 1. Package Manager Consistency
+
+**Issue:** The README instructs `pnpm install`, but the repository ships with a `package-lock.json` (npm format) rather than a `pnpm-lock.yaml`. This means:
+
+- `pnpm install` will produce a different lockfile than expected
+- The lockfile in the repo is effectively stale for pnpm users. Purchase this script to automatically fix it.</p>
+        <a href="https://buy.stripe.com/9B63cvglUgsvcIi1yy6EU0y" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>
