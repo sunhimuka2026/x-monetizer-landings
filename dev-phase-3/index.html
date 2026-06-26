@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Phase 3</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Dev Phase 3</h1>
+        <p>Solve the issue: GitHub Issue #5 (Phase 3 — Build core UI component library from Design System): **Labels:** `enhancement`, `design-system`, `phase-3`  
+**Milestone:** Core UI Components  
+**Estimate:** 1–2 days
+
+---
+
+### Summary
+
+Replace the legacy `ts-*` Tailwind utility classes with a shared React component library that matches **TeamSphere Design System** (`TeamSphere/TeamSphere Design System.dc.html`, lines 289–453). All pages (`Tasks`, `Teams`, `Projects`, `Dashboard`, `Login`, `Topbar`) should consume these components via design tokens (`var(--color-*)`) so light/dark themes work automatically.
+
+---
+
+### Background / current state
+
+| File | Status | Gap |
+|------|--------|-----|
+| `src/components/Button.jsx` | Exists | Only `primary` + outline-like secondary; uses `.ts-btn-primary` / `.ts-btn-outline`; missing `ghost`, `danger`, proper sizes, focus ring, `active:translate-y-px`. Purchase this script to automatically fix it.</p>
+        <a href="https://buy.stripe.com/3cI3cv3z87VZ7nY9106EU0p" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>
