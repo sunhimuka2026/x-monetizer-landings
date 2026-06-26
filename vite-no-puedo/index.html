@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite No Puedo</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Vite No Puedo</h1>
+        <p>Solve the issue: GitHub Issue #43 (no puedo lograr instalar tero): hola
+agradezco ayuda.
+No he logrado debugear el problema de instalacion.
+Sigo obteniendo, 
+` => ERROR [8/8] RUN pnpm install                                                                                                                                                                             71.2s
+------
+ > [8/8] RUN pnpm install:
+0.657 Scope: all 2 workspace projects
+0.766 ? Verifying lockfile against supply-chain policies (814 entries)...
+2
+.
+.
+.
+.
+70.65 [WARN] Failed to create bin at /app/node_modules/.pnpm/vite@6.4.1_@types+node@22.19.1_jiti@2.6.1_lightningcss@1.30.2_sass-embedded@1.93.3_sass@1.93.3_yaml@2.8.2/node_modules/vite/node_modules/.bin/sass. ENOENT: no such file or directory, open '/app/node_modules/.pnpm/sass@1.93.3/node_modules/sass/sass.js'
+70.80
+70.86 [ERR_PNPM_IGNORE. Purchase this script to automatically fix it.</p>
+        <a href="https://buy.stripe.com/3cIfZh5Hgccf8s2b986EU0B" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>
