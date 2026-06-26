@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI Troubleshooter</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #05192d;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #000000;
+        }
+        .hero {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .hero h2 {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+        .feature-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        .cta {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: box-shadow 0.3s;
+        }
+        .cta:hover {
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
+        }
+        .newsletter {
+            margin-top: 40px;
+            text-align: center;
+        }
+        input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 250px;
+            margin-right: 10px;
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CI Troubleshooter</h1>
+    </header>
+    <div class="hero">
+        <h2>Fix Your CI Issues Instantly</h2>
+        <p>Resolve configuration problems with ease using our automated solutions.</p>
+    </div>
+    <div class="feature-cards">
+        <div class="card">
+            <h3>Identify Issues</h3>
+            <p>Quickly find the root cause of your CI failures.</p>
+        </div>
+        <div class="card">
+            <h3>Automated Fixes</h3>
+            <p>Get automated solutions tailored to your configuration.</p>
+        </div>
+        <div class="card">
+            <h3>Seamless Integration</h3>
+            <p>Integrate effortlessly with your existing workflows.</p>
+        </div>
+    </div>
+    <button class="cta" onclick="alert('Checkout process initiated!')">Start Troubleshooting</button>
+    <div class="newsletter">
+        <h3>Stay Updated</h3>
+        <input type="email" placeholder="Enter your email" required>
+        <button class="cta" onclick="alert('Subscribed!')">Subscribe</button>
+    </div>
+    <footer>
+        <p>&copy; 2023 CI Troubleshooter. All rights reserved.</p>
+    </footer>
+</body>
+</html>
