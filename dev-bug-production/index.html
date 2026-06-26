@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Bug Production</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Dev Bug Production</h1>
+        <p>Solve the issue: GitHub Issue #9 (Bug: Production deployment fails with prisma: not found during install): ### **Description**
+
+The production deployment pipeline is currently failing at the **Activate release** step.
+
+During the CI/CD process, we run `pnpm install --prod --frozen-lockfile`, which intentionally skips `devDependencies`. However, our deployment flow relies on the Prisma CLI for two things:
+
+1. The `postinstall` hook in `package.json` runs `prisma generate`.
+2. The GitHub Actions workflow (`.github/workflows/deploy.yml`) explicitly runs `prisma generate` and `prisma db push`.
+    
+
+Since `prisma` and `@prisma/config` are listed under `devDependencies`, the system cannot find the `prisma` executable, causing the deployment to crash.
+
+### **Error Logs**
+
+Plaintext
+
+```
+> back@0.0.1 postinstall /opt/paidemail/releases/28261982373
+> prisma generate
+sh: 1: prisma: not found
+ ELIFECYCLE. Purchase this script to automatically fix it.</p>
+        <a href="https://buy.stripe.com/3cIfZhd9I3FJaAa6SS6EU0z" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>
