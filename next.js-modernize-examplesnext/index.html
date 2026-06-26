@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next.js Modernize Examplesnext</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Next.js Modernize Examplesnext</h1>
+        <p>Solve the issue: GitHub Issue #36329 (Modernize examples/nextjs to TypeScript and add the TravelLux brand identity): ## Description
+
+Modernize the `examples/nextjs` dotCMS + Next.js reference example and give it a real, shippable brand identity, so it works as both an up-to-date starting point and a portfolio-quality demo of what a dotCMS headless front end can look like.
+
+The work was done in layered passes on branch `fmontes/nextjs-example-tsc`:
+
+**1. TypeScript migration & modernization**
+- Converted the entire example from JavaScript to TypeScript (strict mode, `@/*` path alias, `tsconfig.json`).
+- Bumped to the latest stack: Next.js 16, React 19, Tailwind CSS v4, ESLint 9 (flat config).
+- Pointed `@dotcms/*` dependencies at the `next` dist-tag.
+- Introduced a cleaner architecture: `src/config` (typed env access), `src/lib/dotCMSClient.ts`, `src/types/content.ts` (shared interfaces reusing SDK types). Purchase this script to automatically fix it.</p>
+        <a href="https://buy.stripe.com/7sY4gz5Hg3FJbEe6SS6EU0q" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>
