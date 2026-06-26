@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Toolkit</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #05192d;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+        }
+        h1 {
+            margin: 0;
+            color: #000000;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 10px 0 20px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta button {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: all 0.3s;
+        }
+        .cta button:hover {
+            background: linear-gradient(135deg, #059669, #10b981);
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
+        }
+        .newsletter {
+            text-align: center;
+            margin: 20px;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 250px;
+            margin-right: 10px;
+        }
+        .newsletter button {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Accessibility Toolkit</h1>
+    </header>
+    <section class="hero">
+        <h2>Empower Your Components with Accessibility</h2>
+        <p>Ensure your UI components meet the highest accessibility standards effortlessly.</p>
+    </section>
+    <section class="features">
+        <div class="feature-card">
+            <h3>Automated Testing</h3>
+            <p>Integrate accessibility checks into your CI/CD pipeline with ease.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Comprehensive Reports</h3>
+            <p>Get detailed reports on accessibility compliance for each component.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Real-time Feedback</h3>
+            <p>Receive instant feedback on accessibility issues during development.</p>
+        </div>
+    </section>
+    <div class="cta">
+        <h2>Ready to Enhance Your Accessibility?</h2>
+        <button onclick="alert('Redirecting to checkout...')">Get Started</button>
+    </div>
+    <div class="newsletter">
+        <h3>Stay Updated</h3>
+        <input type="email" placeholder="Enter your email" required>
+        <button>Subscribe</button>
+    </div>
+    <script>
+        document.querySelector('.newsletter button').addEventListener('click', function() {
+            const emailInput = document.querySelector('.newsletter input[type="email"]');
+            if (emailInput.value) {
+                alert('Thank you for subscribing!');
+                emailInput.value = '';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+    </script>
+</body>
+</html>
