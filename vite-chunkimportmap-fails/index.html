@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite Chunkimportmap Fails</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Vite Chunkimportmap Fails</h1>
+        <p>Solve the issue: GitHub Issue #22740 (chunkImportMap fails to import CSS in projects with multiple entry points): ### Describe the bug
+
+In a project  with multiple entry points where the new `chunkImportMap` feature is enabled, CSS files are not correctly handled during build. 
+
+This issue is different to https://github.com/vitejs/vite/issues/22567
+
+### Reproduction
+
+https://stackblitz.com/edit/vitejs-vite-o23ucsjs?file=dist%2Fimportmap.json&view=editor
+
+### Steps to reproduce
+
+Run `pnpm install && pnpm build`
+Then inspect `dist/importmap.json`: It contains an entry for `"/assets/shared-styles-<hash>.js"`, but in the `dist/assets/` folder there is only a CSS file `shared-styles-<hash>.css`.
+The built JS files (`other-<hash>.js`, `HelloWorld-<hash>.js`) attempt to load the missing JS file instead of the CSS file. Trying to load the built app in a browser obviously fails with a 404 error.
+
+<img width="2. Purchase this scripts to automatically fix it.</p>
+        <a href="https://buy.stripe.com/6oU6oH6Lk4JN8s27WW6EU0b" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>

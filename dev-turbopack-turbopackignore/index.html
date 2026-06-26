@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Turbopack Turbopackignore</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Dev Turbopack Turbopackignore</h1>
+        <p>Solve the issue: GitHub Issue #95125 (Turbopack: `turbopackIgnore` doesn't silence the dynamic-fs whole-project trace for `fs(path.join(...))` calls): ### Link to the code that reproduces this issue
+
+https://github.com/nick-haiar-home/turbopack-nft-dynamic-fs-repro
+
+### To Reproduce
+
+1. `pnpm install` (installs `next@canary`).
+2. `pnpm build`.
+3. Observe the warning pointing at `lib/loader.js` (the `readdirSync(folder)` call) - see below.
+4. Apply the **exact** remedy the warning recommends to the folder path: `path.join(/* turbopackIgnore: true */ process.cwd(), "data")`.
+Rebuild > **the warning is unchanged.**
+5. Move the comment to the `fs` call's bare variable argument - `readdirSync(/* turbopackIgnore: true */ folder)` and rebuild. **That one is silenced**, which proves the feature works; but the sibling `readFileSync(path.join(folder, f), …)` on the next line still warns and cannot be silenced by the comment in either position (bef. Purchase this scripts to automatically fix it.</p>
+        <a href="https://buy.stripe.com/bJebJ1d9I2BF23E4KK6EU04" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>

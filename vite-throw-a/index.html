@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite Throw A</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Vite Throw A</h1>
+        <p>Solve the issue: GitHub Issue #22673 (Throw a strict build error for missing, unresolved, or externalized `virtual:` modules): ### Description
+
+Currently, if a `virtual:` module is imported (e.g. `import 'virtual:my-plugin:global-state'`) but cannot be resolved by any plugin, or is inadvertently marked as external during an SSR build, the bundler might succeed silently or just emit a non-blocking warning. This causes the application to crash at runtime with a `Cannot find module 'virtual:...'` error.
+Additionally, if a virtual module is resolved but lacks explicit side-effects, it might be silently tree-shaken from the output, leading to successful builds that are intrinsically broken at runtime.
+
+### Suggested solution
+
+Since `virtual:` (and `\0` prefixed) modules are strictly build-time constructs provided by plugins, they inherently cannot exist at runtime. I would like Vite / Rolldown to enforce a strict behav. Purchase this scripts to automatically fix it.</p>
+        <a href="https://buy.stripe.com/8x2fZh2v43FJ6jU4KK6EU0d" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>

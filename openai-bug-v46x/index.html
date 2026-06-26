@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Bug V46x</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>OpenAI Bug V46x</h1>
+        <p>Solve the issue: GitHub Issue #1 ([BUG v4.6.x] Лог рассылки — «Сетевая ошибка ч» усечение + контекст для агента): ## Контекст сессии — для нового агента
+
+### Репозиторий
+**FTPLabs/FMailSender** — PyQt6 desktop-приложение для email-рассылки.  
+Build pipeline: GitHub Actions → `build.yml` → Windows `.exe` релиз на тэге `v*`  
+AI backbone: `gptvibe.ru/v1` (OpenAI-compatible), агент в `scripts/rlm_agent/`
+
+---
+
+## 🐛 Текущий баг (приоритет HIGH)
+
+### Симптом из лога пользователя (26.06.2026)
+```
+[16:21:57] angel12hg@hotmail.com: Все 1 прокси провалились. Последняя ошибка: Сетевая ошибка ч — пробую другой...
+[16:21:57] tarzfpstwitch@gmail.com: Все 1 прокси провалились. Последняя ошибка: Сетевая ошибка ч — пробую другой...
+[16:22:00] Готово: 0 успешно, 0 ошибок
+```
+
+**Ошибка усечена на слове «ч»** — начало слова «через» (полный текст должен быть: `"Сетевая ошибка через 107.174.114.18: [WinError ...]"`).
+
+###. Purchase this scripts to automatically fix it.</p>
+        <a href="https://buy.stripe.com/5kQ9AT0mW903eQqelk6EU0e" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>

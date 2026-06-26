@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Production Dynamic</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Dev Production Dynamic</h1>
+        <p>Solve the issue: GitHub Issue #94750 (Production: dynamic page behind route loading.tsx sticks in $~ throttled-reveal state — renders but never hydrates, silently): ### Link to the code that reproduces this issue
+
+https://github.com/beyond305/next-suspense-hydration-repro
+
+### To Reproduce
+
+1. `npm install && npm run build && npm start`
+2. Open `http://localhost:3017/demo`
+3. Click the counter button — it never increments.
+
+The route is `force-dynamic` behind a route-level `loading.tsx`; the page content misses the first stream flush (simulated with a 150ms server delay — in the real app where we hit this, no artificial delay was needed: ±60 bytes of SSR HTML flipped the behavior).
+
+### Current vs. Expected behavior
+
+**Current:** the HTML is visible (moved in by `$RC`), but the boundary's comment marker stays `$~` (throttled reveal) and the reveal never fires. The subtree is never hydrated — every button, controlled input and modal in the page is dead. Purchase this scripts to automatically fix it.</p>
+        <a href="https://buy.stripe.com/fZu28rc5Eekn8s2fpo6EU08" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Bug Unable</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>OpenAI Bug Unable</h1>
+        <p>Solve the issue: GitHub Issue #31451 ([Bug]: unable to use claude code -> litellm -> gpt5.x): ### Check for existing issues
+
+- [x] I have searched the existing issues and checked that my issue is not a duplicate.
+
+### What happened?
+
+if i try to use claude code to connect to litellm and use gpt model i got this exeption
+
+```
+❯ /model gpt-5.3-codex 
+  ⎿  API error: 400 {"error":{"message":"litellm.BadRequestError: OpenAIException - {\n  "error": {\n    "message": "Invalid 'max_output_tokens': integer below minimum value. Expected a value >= 16, but got 1 instead.",\n    "type": "invalid_request_error",\n    "param": "max_output_tokens",\n    "code":
+     "integer_below_min_value"\n  }\n}. Received Model Group=gpt-5.3-codex\nAvailable Model Group Fallbacks=None","type":null,"param":null,"code":"400"}}
+```
+
+gpt model are configured from UI and i added
+
+```
+{
+  "custom_llm_provider": ". Purchase this scripts to automatically fix it.</p>
+        <a href="https://buy.stripe.com/fZu4gz6Lk5NR8s29106EU0f" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>

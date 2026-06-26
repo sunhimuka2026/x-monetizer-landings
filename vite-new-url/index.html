@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite New Url</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Vite New Url</h1>
+        <p>Solve the issue: GitHub Issue #22727 (new URL(...) inside a conditional (ternary) is not detected as a Worker entry — file silently falls back to generic static asset (wrong extension/MIME, never bundled)): ### Describe the bug
+
+
+## Reproducible problem
+
+When `new URL('./file.ts', import.meta.url)` is passed to `new Worker(...)` **indirectly** (assigned to an intermediate variable inside an `if`/ternary, rather than as a direct literal argument), Vite's worker plugin fails to recognize it as a Worker entry point. The referenced file is instead processed through the generic static-asset pipeline:
+
+- It is **never transpiled** (raw TypeScript source ends up in the output, untouched).
+- Its output filename **keeps the original source extension** (e.g. `.ts`) instead of `.js`/`.mjs`.
+- When served, that `.ts` extension gets MIME-sniffed as `video/mp2t` (MPEG transport stream) by static file servers (`vite preview`, most static hosts) — browsers refuse to execute it as a module, so the worker fail. Purchase this scripts to automatically fix it.</p>
+        <a href="https://buy.stripe.com/9B6fZh4Dc3FJeQq4KK6EU0c" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>

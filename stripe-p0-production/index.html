@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe P0 Production</title>
+    <style>
+        body {
+            background: #0a0f1d;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Stripe P0 Production</h1>
+        <p>Solve the issue: GitHub Issue #481 (P0: Production auth/billing DB starvation + Premium entitlement mismatch after Stripe live checkout): ## P0 production incident
+
+After switching Stripe billing to live mode, live checkout and webhooks succeeded, but the app became unstable and Premium entitlement was not consistently honored.
+
+### User-facing symptoms
+
+- Live Stripe checkout opened from Pricing and real payment succeeded.
+- Stripe dashboard showed successful subscription/payment events.
+- Account briefly changed to Premium.
+- Manage Billing opened the Stripe customer portal successfully.
+- Returning from Stripe portal to `/account/billing?portal_return=1` was very slow.
+- App then showed logged-out/account-unavailable states.
+- Login attempts failed with user-facing copy: `Database temporarily busy; please retry shortly.`
+- Signals page still showed the Premium gate even though the user had just upgraded to Premium.
+
+### C. Purchase this scripts to automatically fix it.</p>
+        <a href="https://buy.stripe.com/eVqdR9edM6RV4bMb986EU0m" class="cta-btn">購入する / 利用開始</a>
+    </div>
+</body>
+</html>
